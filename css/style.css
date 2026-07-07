@@ -1,0 +1,82 @@
+@import "./variables.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    margin: 1.5rem;
+    font-family: var(--font-primary);
+}
+
+/*Móviles*/
+@media (max-width:768px){
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #perfil {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #perfil--nombre h1 {
+        font-size: 1.2rem;
+    }
+
+    #perfil--img {
+        width: 55px;
+    }
+
+    #buscar {
+        height: 5vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #buscar button, #contenedor--buscar {
+        height: 100%;
+    }
+
+    .icono--btn {
+        border: none;
+        background: transparent;
+        position: absolute;
+        margin-left: 15px;
+    }
+
+    .icono--btn .icono {
+        color: pink;
+        height: 50%;
+    }
+
+    #contenedor--buscar {
+        position: relative;
+        width: 85%;
+    }
+
+    #contenedor--buscar input {
+        height: 100%;
+        width: 100%;
+        padding-left: 55px;
+        border: 1px solid var(--color-03);
+        border-radius: var(--secund-border-radius);
+    }
+
+}
+
+
+
