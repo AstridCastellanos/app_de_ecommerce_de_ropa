@@ -11,11 +11,13 @@ html {
 }
 
 body {
+    position: relative;
     min-height: 100vh;
     line-height: 1.5;
     margin: 1.5rem;
     font-family: var(--font-primary);
 }
+
 
 /*Móviles*/
 @media (max-width:768px){
@@ -23,6 +25,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+        margin-bottom: 3vh;
     }
 
     #perfil {
@@ -32,15 +35,20 @@ body {
     }
 
     #perfil--nombre h1 {
-        font-size: 1.2rem;
+        font-size: 1.0rem;
+    }
+
+    #perfil--nombre p {
+        color: var(--color-03);
+        font-size: 0.8rem;
     }
 
     #perfil--img {
-        width: 55px;
+        width: 50px;
     }
 
     #buscar {
-        height: 5vh;
+        height: 6vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -51,21 +59,20 @@ body {
         height: 100%;
     }
 
-    .icono--btn {
+    #buscar--btn {
         border: none;
         background: transparent;
         position: absolute;
         margin-left: 15px;
     }
 
-    .icono--btn .icono {
-        color: pink;
+    #buscar--btn .icono {
         height: 50%;
     }
 
     #contenedor--buscar {
         position: relative;
-        width: 85%;
+        width: 80%;
     }
 
     #contenedor--buscar input {
@@ -76,6 +83,152 @@ body {
         border-radius: var(--secund-border-radius);
     }
 
+    #filtro--btn {
+        border: none;
+        background: var(--color-01);
+        border-radius: var(--secund-border-radius);
+        width: 14%;
+    }
+
+    /*Categorias*/
+
+    #categorias {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 3vh;
+        overflow: auto;
+    }
+
+    #categorias button {
+        display: flex;
+        background: transparent;
+        color: var(--color-01);
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--color-03);
+        border-radius: var(--secund-border-radius);
+        font-size: 0.8rem;
+        text-wrap: nowrap;
+    }
+
+    #categorias button:hover {
+        background: var(--color-01);
+        color: var(--color-04);
+    }
+
+    #categorias .icono {
+        height: 1rem;
+    }
+
+    /*Cards de productos*/
+
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+        gap: 1rem;
+        padding-bottom: 10vh;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .card--img > img {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    
+    .card--img--fav {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: var(--main-border-radius-);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-01);
+    }
+
+    .icono-fav {
+        width: 20px;
+    }   
+
+    .icono-fav:hover {
+        cursor: pointer;
+        background-image: url("../storage/svg/fav--hover.svg");
+    }
+
+    .card--info h2 {
+        font-size: 0.9rem;
+    }
+
+    .card--info p:not(.precio, .card--info--rating p) {
+        font-size: 0.7rem;
+        color: var(--color-03);
+    }
+
+    .card--info > div {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .precio {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--color-01);
+    }
+
+    .card--info--rating {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    .card--info--rating img {
+        width: 0.9rem;
+    }
+
+    .card--info--rating p {
+        font-size: 0.8rem;
+        color: var(--color-03);
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 85%;
+        height: 7vh;
+        background-color: var(--color-01);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 2rem;
+        margin: 0 1.5rem 0.8rem 1.5rem;
+    }
+
+    footer button {
+        background: var(--color-02);
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: var(--main-border-radius-);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .icono {
+        width: 20px;
+    }
 }
 
 
