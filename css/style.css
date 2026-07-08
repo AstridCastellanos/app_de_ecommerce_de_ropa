@@ -160,6 +160,13 @@ header {
     font-size: 0.9rem;
 }
 
+.card--info a {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-01);
+    text-decoration: none;
+}
+
 .card--info p:not(.precio, .card--info--rating p) {
     font-size: 0.7rem;
     color: var(--color-03);
@@ -225,16 +232,16 @@ footer .icono {
     width: 25px;
 }
 
-
 /*Hover*/
 #filtro--btn:hover {
     background-color: var(--color-02);
 }
 
-.icvono-fa:hover {
+.icono-fav:hover {
     cursor: pointer;
     background-image: url("../storage/svg/fav--hover.svg");
 }
+
 
 .footer__icon--1:hover {
     cursor: pointer;
