@@ -210,11 +210,14 @@ footer {
     width: 40%;
     height: 7vh;
     background-color: var(--color-01);
+    border-radius: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+#footer--main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 2rem;
-    margin-bottom: 0.3rem;
 }
 
 footer button {
