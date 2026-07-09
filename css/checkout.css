@@ -1,4 +1,8 @@
-
+#header--checkout, #main--checkout {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #contenedor-btns {
     display: flex;
@@ -95,21 +99,21 @@
 }
 
 .btn__mas {
-    display: inline-block;
-    background-size: cover;
     background-image: url("../storage/svg/addition.svg");
-    background-repeat: no-repeat;
-    transition: background-image 0.3s ease-in-out;
 }
 
 .btn__menos {
-    display: inline-block;
-    background-size: cover;
     background-image: url("../storage/svg/subtraction.svg");
+
+}
+
+.btn__mas,
+.btn__menos {
+    background-size: 55%;
+    background-position: center;
     background-repeat: no-repeat;
     transition: background-image 0.3s ease-in-out;
 }
-
 
 .btn__mas:hover {
     background-color: var(--color-01);
@@ -192,4 +196,16 @@ hr {
 #footer--checkout p{
     color: #ffffff;
     font-weight: 700;
+}
+
+/*Tablets*/
+@media screen and (max-width: 990px){
+    
+}
+
+/*Móviles*/
+@media screen and (max-width:760px){
+    #header--checkout, #main--checkout {
+        width: 100%;
+    }
 }

@@ -1,11 +1,16 @@
 @import "./variables.css";
 
 main {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 5rem;
 }
 
 #detail-img {
+    width: 50%;
     height: 60vh;
     object-fit: cover;
     position: relative;
@@ -40,10 +45,24 @@ main {
     width: 4vh;
 }
 
-#btn--fav {
-    padding: 0;
+#btn--volver {
+    background-image: url("../storage/svg/previous.svg");
 }
 
+#btn--fav {
+    padding: 0;
+    background-image: url("../storage/svg/fav--details.svg");
+}
+
+#btn--volver:hover {
+    background-color: var(--color-01);
+    background-image: url("../storage/svg/previous--hover.svg");
+}
+
+#btn--fav:hover {
+    background-color: var(--color-01);
+    background-image: url("../storage/svg/fav--hover.svg");
+}
 
 #contenedor-btns img {
     height: 1.6rem;
@@ -107,6 +126,45 @@ main {
     height: 3.5vh;
 }
 
+/*Botones para quitar o agregar producto*/
+.btn__mas {
+    background-image: url("../storage/svg/addition.svg");
+}
+
+.btn__menos {
+    background-image: url("../storage/svg/subtraction.svg");
+
+}
+
+#btn--volver, #btn--fav, .btn__mas, .btn__menos {
+    background-size: 55%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease-in-out;
+}
+
+#btn--volver, #btn--fav {
+    background-size: 65%;
+}
+
+.btn__mas, .btn__menos {
+    background-size: 55%;
+}
+
+#modificar--cantidad button:hover {
+    background-color: var(--color-01);
+}
+
+.btn__mas:hover {
+    cursor: pointer;
+    background-image: url("../storage/svg/addition--hover.svg");
+}
+
+.btn__menos:hover {
+    cursor: pointer;
+    background-image: url("../storage/svg/subtraction--hover.svg");
+}
+
 #modificar--cantidad p {
     margin: 0;
     font-weight: bold;
@@ -162,6 +220,11 @@ hr {
     align-items: center;
 }
 
+.detalle__elementos--talla div:hover {
+    background-color: var(--color-01);
+    color: #ffffff;
+}
+
 #color--01 {
     background-color: var(--color-03);
 }
@@ -193,16 +256,15 @@ hr {
     color: var(--color-03);
 }
 
-#modificar--cantidad button:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 4vh;
-    height: 4vh;
-}
+/*Tablets*/
+@media screen and (max-width:1024px) {
+    main {
+        width: 100%;
+    }
 
-#btn--volver:hover, #btn--fav:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 4.2vh;
-    height: 4.2vh;
+    #detail-img {
+        width: 80%;
+    }
 }
 
 /*Móviles*/
@@ -210,9 +272,11 @@ hr {
     main {
         width: 100%;
         margin: 0;
+        display: block;
     }
 
     #detail-img {
         height: 50vh;
+        width: 100%;
     }
 }
