@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Encode Sans";
+    src: url("../storage/font/Encode_Sans/static/EncodeSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Encode Sans";
+    src: url("../storage/font/Encode_Sans/static/EncodeSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --font-primary: "Encode Sans", sans-serif;
+    --color-01: #292526;
+    --color-02: #787676;
+    --color-03: #A3A1A2;
+    --color-04: #F2F2F2;
+    --color-05: #121111;
+    --font-size: 16px;
+    --main-border-radius-: 50%;
+    --secund-border-radius: 8px;
+}
