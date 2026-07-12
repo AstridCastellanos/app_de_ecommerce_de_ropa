@@ -10,16 +10,17 @@ main {
 }
 
 #detail-img {
-    width: 50%;
+    width: 100%;
     height: 60vh;
-    object-fit: cover;
     position: relative;
+    display: flex;
 }
 
 #detail-img img {
     height: 100%;
-    width: 100%;
+    width: 20rem;
     border-radius: 1.1rem;
+    margin: 0 auto;
 }
 
 #contenedor-btns {
@@ -237,6 +238,14 @@ hr {
     background-color: var(--color-01);
 }
 
+.detalle__elementos--color div:hover {
+    border: 1px solid;
+}
+
+.detalle__elementos--color div:last-child:hover {
+    border: 2px solid var(--color-02);
+}
+
 /*Footer*/
 #footer--detalle {
     display: flex;
@@ -262,9 +271,10 @@ hr {
         width: 100%;
     }
 
-    #detail-img {
-        width: 80%;
+    main > div {
+        width: 50%;
     }
+    
 }
 
 /*Móviles*/
@@ -275,8 +285,16 @@ hr {
         display: block;
     }
 
+    main > div {
+        width: 100%;
+    }
+
     #detail-img {
         height: 50vh;
-        width: 100%;
+        display: flex;
+    }
+
+    #detail-img img{
+        margin: 0 auto;
     }
 }
