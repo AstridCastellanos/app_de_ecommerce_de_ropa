@@ -103,12 +103,14 @@ body {
 
 #categorias button {
     display: flex;
+    align-items: center;
     background: transparent;
     color: var(--color-01);
     padding: 0.5rem 1rem;
     border: 1px solid var(--color-03);
     border-radius: var(--secund-border-radius);
     font-size: 0.8rem;
+    gap: 0.3rem;
     text-wrap: nowrap;
 }
 
@@ -117,8 +119,8 @@ body {
     color: var(--color-04);
 }
 
-#categorias .icono {
-    height: 1rem;
+#categorias button > img {
+    width: 1.1rem;
 }
 
 /*Cards de productos*/
@@ -248,28 +250,51 @@ footer .icono {
     background-color: var(--color-02);
 }
 
+#all--items--btn:hover img {
+    content: url("../storage/svg/all-items--hover.svg");
+}
+
+#dress--btn:hover img {
+    content: url("../storage/svg/dress--hover.svg");
+}
+
+#tshirt--btn:hover img {
+    content: url("../storage/svg/tshirt--hover.svg");
+}
+
+#jeans--btn:hover img {
+    content: url("../storage/svg/jeans--hover.svg");
+}
+
+#sweater--btn:hover img {
+    content: url("../storage/svg/sweater--hover.svg");
+}
+
+#shoes--btn:hover img {
+    content: url("../storage/svg/shoes--hover.svg");
+}
+
 .icono-fav:hover {
     cursor: pointer;
     background-image: url("../storage/svg/fav--hover.svg");
 }
 
-
-.footer__icon--1:hover {
+#footer__icon--1:hover img{
     cursor: pointer;
     background-image: url("../storage/svg/home--hover.svg");
 }
 
-.footer__icon--2:hover {
+#footer__icon--2:hover img{
     cursor: pointer;
     background-image: url("../storage/svg/shopping--hover.svg");
 }
 
-.footer__icon--3:hover {
+#footer__icon--3:hover img{
     cursor: pointer;
     background-image: url("../storage/svg/fav--hover.svg");
 }
 
-.footer__icon--4:hover {
+#footer__icon--4:hover img{
     cursor: pointer;
     background-image: url("../storage/svg/user--hover.svg");
 }
