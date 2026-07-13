@@ -1,3 +1,8 @@
+#header--checkout {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
 #header--checkout, #main--checkout {
     width: 80%;
     margin-left: auto;
