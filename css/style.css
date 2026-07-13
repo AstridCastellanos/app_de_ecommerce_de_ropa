@@ -12,7 +12,6 @@ html {
 
 body {
     position: relative;
-    min-height: 100vh;
     line-height: 1.5;
     margin: 0 5rem;
     font-family: var(--font-primary);
@@ -125,7 +124,7 @@ body {
 /*Cards de productos*/
 
 #main--home {
-    margin-top: 12rem;
+    margin-top: 13rem;
 }
 
 #cards {
@@ -322,7 +321,7 @@ footer .icono {
 
     /*Categorias*/
     #main--home {
-        margin-top: 14.5rem;
+        margin-top: 15rem;
     }
 
     #categoria {
@@ -339,7 +338,6 @@ footer .icono {
     }
 
     /*Footer*/
-
     footer {
         width: 90%;
     }
