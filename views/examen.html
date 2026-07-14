@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/examen.css">
+    <title>Tabla de Tallas</title>
+</head>
+<body>
+    <header id="header--examen">
+        <div id="contenedor--btns--examen">
+            <a id="btn--volver--examen" class="btn__header--examen" href="./detail.html">
+                <img src="../storage/svg/previous.svg" alt="Volver">
+            </a>
+            <div id="contenedor--titulo">
+                <h1>Tabla de Tallas</h1>
+            </div>
+        </div>
+    </header>
+    <main id="main--examen">
+        <div id="selector">
+            <label for="tallas">Tipo de prenda:</label>
+
+            <select name="tallas" id="tallas">
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="m">L</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>TALLA</th>
+                    <th>PECHO</th>
+                    <th>CINTURA</th>
+                    <th>CADERA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="fila-1">
+                    <td>XS</td>
+                    <td>82-96 cm</td>
+                    <td>66-70 cm</td>
+                    <td>90-94 cm</td>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td>86-90 cm</td>
+                    <td>70-74 cm</td>
+                    <td>94-98 cm</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>90-94 cm</td>
+                    <td>74-78 cm</td>
+                    <td>98-102 cm</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>94-98 cm</td>
+                    <td>78-82 cm</td>
+                    <td>102-106 cm</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

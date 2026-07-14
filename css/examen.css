@@ -1,0 +1,118 @@
+@import "./variables.css";
+
+body {
+    font-family: var(--font-primary);
+}
+
+#header--examen {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#header--examen, #main--examen {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contenedor--btns--examen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3vh 0;
+}
+
+#contenedor--titulo {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+.btn__header--examen {
+    display: flex;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--color-03);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vh;
+    height: 4vh;
+}
+
+.btn__header--examen:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 4.2vh;
+    height: 4.2vh;
+}
+
+#main--examen {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#selector label {
+    color: var(--color-02);
+}
+
+#tallas {
+    border: none;
+    background-color: var(--color-01);
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+thead tr th:first-child {
+    border-top-left-radius: 1rem;
+}
+
+thead tr th:last-child {
+    border-top-right-radius: 1rem;
+}
+
+tbody tr td:first-child {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+tbody tr td:last-child {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+tr:not(thead > tr):hover {
+    background-color: var(--color-04);
+}
+
+thead > tr {
+    height: 5vh;
+    color: #ffffff;
+    background-color: var(--color-01);
+}
+
+td {
+    height: 60px;
+    padding: 10px;
+}
+
+body:has(#tallas[value="xs"]) .fila-1 {
+    background-color: #ffcccc;
+}
+  
+@media screen and (max-width: 760px){
+    table {
+        font-size: 0.8rem;
+    }
+}

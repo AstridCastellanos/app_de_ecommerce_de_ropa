@@ -207,6 +207,10 @@ hr {
     margin-bottom: 0.5rem;
 }
 
+.detalle h3 a {
+    color: var(--color-01);
+}
+
 .detalle__elementos div {
     width: 1.6rem;
     height: 1.6rem;
